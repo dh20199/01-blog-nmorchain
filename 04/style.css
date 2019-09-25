@@ -12,8 +12,8 @@ main {
     grid-template-areas: "nav nav nav"
                          "side art aside"
                          "side art aside";
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 12fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-gap: 
 }
 
@@ -28,17 +28,17 @@ main>* {
 
 aside {
     background-color: rgba(143, 81, 188, 0.3);
-    grid-area: "sidebar";
+    grid-area: aside;
 }
 
 
 section.sidebar {
     background-color: rgba(150, 112, 36, 0.3);
-    grid-area: "side";
+    grid-area: side;
     display: flex; 
-    flex-direction: left;
+    flex-direction: column;
     justify-content:            /*these last two are optional*/
-    align-items:
+    align-items: 
 }
 
 section.sidebar img {
@@ -49,13 +49,13 @@ section.sidebar img {
 
 nav {
     background-color: rgba(30,200,30,0.3);
-    grid-area: "nav";
+    grid-area: nav;
 
 }
 
 article {
     background-color: rgba(30,30,30,0.4);
-    grid-area: "art";
+    grid-area: art;
     display: grid ;
     grid-template-columns: repeat (5, 1fr);
     grid-template-rows: repeat (5, 1fr);
@@ -77,28 +77,28 @@ article div section {
 
 /* use the grid-row and grid-column values to place the boxes precisely onto the grid */
 #box1 {
-    grid-row: "1";
-    grid-column: "1";
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 
 #box2 {
-    grid-row: "1";
-    grid-column: "2";
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
 
 #box3 {
-    grid-row: "1";
-    grid-column: "3";
+    grid-row: 3/4;
+    grid-column: 3/4;
 }
 
 #box4 {
-    grid-row: "1";
-    grid-column: "4";
+    grid-row: 4/5;
+    grid-column: 4/5;
 }
 
 #box5 {
-    grid-row: "1";
-    grid-column: "5";
+    grid-row: 1/2;
+    grid-column: 5/6;
     background-color: rgba(200,10,10,0.3)
 }
 
@@ -115,7 +115,7 @@ article div section {
         grid-template-rows: 80px 1fr 120px 80px;
     }
     section.sidebar {
-        flex-direction: left;       /* when the screen shrinks, change direction.*/
+        flex-direction: column;       /* when the screen shrinks, change direction.*/
     }
     
     section.sidebar img {       /* I'vefilled these in for you; feel free to fool with them if you like. */
