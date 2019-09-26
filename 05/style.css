@@ -1,12 +1,12 @@
 article {
     background:  #0000;;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px; 
+    grid-template-columns: 5fr 20fr 4.6fr;
+    grid-template-rows: 75fr 5fr; 
 
 }
 a:link {
-    background-color: aqua;
+    background-color: whitesmoke;
 }
 header {
     text-align: center;
