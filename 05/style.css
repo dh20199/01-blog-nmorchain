@@ -1,5 +1,5 @@
 article {
-    background:  #0000;;
+    background:  #0000;
     display: grid;
     grid-template-columns: 5fr 20fr 4.6fr;
     grid-template-rows: 75fr 5fr; 
